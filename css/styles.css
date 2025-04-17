@@ -23,6 +23,10 @@
     
     background: #4e4e4e;
 }
+.logo-section img{
+    height: 100%;
+    padding: 20px;
+}
 .info-section{
     width: 80%;
     /* height: 30vh; */
