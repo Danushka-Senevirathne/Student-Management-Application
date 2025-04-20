@@ -1,17 +1,6 @@
-class Students{
-    constructor(){
-        this.studentsArray = [] // array for student object
-    }
-    
-    addStudents(student){
-        this.studentsArray.push(student); // push student object to students array
-    }
-    showStudents(){
-        return this.studentsArray; 
-    }
-}
+import {studentManager} from './studentManger.js'
 
-const newStudent = new Students(); // globle class object
+const newStudent = new studentManager(); // globle class object
 
 document.getElementById('stdForm').addEventListener('submit',(e)=>{
     e.preventDefault();
@@ -51,7 +40,6 @@ document.getElementById('stdForm').addEventListener('submit',(e)=>{
     //call addStudent method
     newStudent.addStudents(student);
     console.log(newStudent.showStudents());
-    
 
 
 })
