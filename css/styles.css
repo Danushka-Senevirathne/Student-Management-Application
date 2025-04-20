@@ -83,3 +83,42 @@
     height: 46vh;
     background: #ffffff;
 }
+
+/* view student section */
+.viewStudentsSection{
+    text-align: center;
+}
+.viewStudentsSection h2{
+    margin-bottom: 10px;
+    font-family: sans-serif;
+    color: rgb(231, 0, 0);
+}
+.viewStudentsSection table{
+    border-collapse: collapse;
+    border: 1px solid black;
+    table-layout: fixed;
+    width: 100%;
+}
+.viewStudentsSection th,td{
+    border: 1px solid black;
+}
+
+/* dummy css */
+/* view student section */
+.AddStudentsSection{
+    text-align: center;
+}
+.AddStudentsSection h2{
+    margin-bottom: 10px;
+    font-family: sans-serif;
+    color: rgb(231, 0, 0);
+}
+.AddStudentsSection table{
+    border-collapse: collapse;
+    border: 1px solid black;
+    table-layout: fixed;
+    width: 100%;
+}
+.AddStudentsSection th,td{
+    border: 1px solid black;
+}

@@ -22,7 +22,9 @@
                 <div class="nav-item Add Student">
                     <a href="./addStudent.html">Add Students</a>
                 </div>
-                <div class="nav-item View Student">View Students</div>
+                <div class="nav-item View Student">
+                    <a href="./viewStudent.html">View Students</a>
+                </div>
                 <div class="nav-item View Results">View Results</div>
                 <div class="nav-item Add Teachers">Add Teachers</div>
                 <div class="nav-item View Teachers">View Teachers</div>
@@ -34,14 +36,43 @@
         <div class="info-section">
             <div class="info-container">
                 <!-- Add Students -->
-                 <div class="AddStudentsSection">
+                 <div class="viewStudentsSection">
                     <h2>View Students</h2>
-                    
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>First Name</th>     
+                                <th>Last Name</th>     
+                                <th>Birthday</th>     
+                                <th>Nationalty</th>     
+                                <th>Phone</th>     
+                                <th>Email</th>
+                                <th>Address</th>
+                                <th>Subjects</th>     
+                            </tr>
+                        </thead>
+                        <tbody id="tbody">
+                            <!-- template display here -->
+                        </tbody>
+                    </table>
+                    <!-- tempalte -->
+                     <template>
+                        <tr>
+                            <td id="tdFname"></td>
+                            <td id="tdLname"></td>
+                            <td id="tdBday"></td>
+                            <td id="tdNationalty"></td>
+                            <td id="tdPhone"></td>
+                            <td id="tdEmail"></td>
+                            <td id="tdAddress"></td>
+                            <td id="tdSubjects"></td>
+                        </tr>
+                     </template>
                  </div>
             </div>
         </div>
     </div>
 
-    <script src="../js/addStudent.js"></script>
+    <script type="module" src="../js/viewStudent.js"></script>
 </body>
 </html>
