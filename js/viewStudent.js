@@ -12,7 +12,7 @@ import {studentManager} from './studentManger.js'
 
   
     data.forEach(std => {
-          const clone = template.content.cloneNode(true);
+        const clone = template.content.cloneNode(true);
         clone.querySelector('#tdFname').textContent = std.fname;
         console.log("Fname is : ",std.fname);
         
