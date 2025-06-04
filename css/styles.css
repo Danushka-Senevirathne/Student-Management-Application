@@ -105,6 +105,13 @@
     width: 100%;
     padding: 10px 0;
 }
+.completed span{
+    text-decoration: line-through;
+    color: red;
+}
+.todo-container ul{
+    list-style: none;
+}
 
 .homeSection{
     display: grid;
