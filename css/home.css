@@ -16,35 +16,7 @@
 body{
     width: 100%;
 }
-/* nav bar ================================================= */
-nav{
-    /* width: 100%; */
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 60px;
-    background-color: var(--nav-clr);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-right: 60px;
-    padding-left: 60px;
-    z-index: 100;
-    /* mrgn: 0 50px; */
-}
-nav ul{
-    display: flex;
-    gap: 1.5rem;
-}
-nav ul li a{
-    color: var(--text-clr);
-    cursor: pointer;
-}
-nav .logo{
-    color: var(--secondery-clr);
-    font-weight: 600;
-}
+
 /* heoro section ====================================*/
 
 .hero_section{
