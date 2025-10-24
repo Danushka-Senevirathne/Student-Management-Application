@@ -56,12 +56,12 @@ document.addEventListener("DOMContentLoaded", () => {
     editId = null;
   });
 
-  //  Save to local storage
+  // Save to local storage
   function saveToLocal() {
     localStorage.setItem("studentArray", JSON.stringify(students));
   }
 
-  //  Update ranks
+  // Update ranks
   function updateRanks() {
     students.sort((a, b) => b.total - a.total);
     students.forEach((stu, index) => {
@@ -70,7 +70,7 @@ document.addEventListener("DOMContentLoaded", () => {
     saveToLocal();
   }
 
-  //  Render student table
+  // Render student table
   function renderTable() {
     updateRanks();
     tBody.innerHTML = "";
@@ -97,11 +97,11 @@ document.addEventListener("DOMContentLoaded", () => {
       tBody.insertAdjacentHTML("beforeend", row);
     });
 
-    //  Update top student & subject toppers
+    // Update top student & subject toppers
     updateTopStudents(students);
   }
 
-  //  Handle Edit / Delete clicks (event delegation)
+  // Handle Edit / Delete clicks (event delegation)
   tBody.addEventListener("click", (e) => {
     const btn = e.target.closest("button");
     if (!btn) return;
@@ -129,7 +129,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 
-  //  Update Top Student & Subject Toppers
+  // Update Top Student & Subject Toppers
   function updateTopStudents(students) {
     if (students.length === 0) {
       document.getElementById("topName").textContent = "-";
@@ -138,13 +138,13 @@ document.addEventListener("DOMContentLoaded", () => {
       return;
     }
 
-    //  Top overall student
+    // Top overall student
     const topStudent = [...students].sort((a, b) => b.total - a.total)[0];
     document.getElementById("topName").textContent = `${topStudent.first_name} ${topStudent.last_name}`;
     document.getElementById("topTotal").textContent = `Total Marks : ${topStudent.total}`;
     document.getElementById("topAverage").textContent = `Average : ${topStudent.avg}`;
 
-    //  Subject-wise toppers
+    // Subject-wise toppers
     const mathTop = [...students].sort((a, b) => b.maths - a.maths)[0];
     const chemistryTop = [...students].sort((a, b) => b.chemistry - a.chemistry)[0];
     const physicsTop = [...students].sort((a, b) => b.physics - a.physics)[0];
